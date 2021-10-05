@@ -16,6 +16,11 @@ defmodule CachingReverseProxyTest.CacheTypesTest do
     test "updating cache data" do
       assert @cache_type.insert(
                "simple-id",
+               "simple-cache-data"
+             ) == {:ok, true}
+
+      assert @cache_type.insert(
+               "simple-id",
                "simple-cache-updated-data"
              ) == {:ok, true}
 

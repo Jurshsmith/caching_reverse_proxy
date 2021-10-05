@@ -2,7 +2,7 @@ defmodule CachingReverseProxyTest do
   @simple_id "simple-id"
   @simple_value "simple-value"
 
-  use ExUnit.Case, async: false
+  use ExUnit.Case
   alias CachingReverseProxy.Cache
   alias CachingReverseProxyTest.SimpleIdSimpleValueMock
   alias CachingReverseProxyTest.SimpleIdNewValueMock
