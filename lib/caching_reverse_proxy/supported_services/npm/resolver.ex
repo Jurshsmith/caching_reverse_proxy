@@ -1,5 +1,5 @@
 defmodule CachingReverseProxy.NPM.Resolver do
-  alias CachingReverseProxy.NPM.Driver
+  alias CachingReverseProxy.NPM.Adapter
 
   def resolve(_parent, %{name: name}, _resolution) do
     name
@@ -7,6 +7,6 @@ defmodule CachingReverseProxy.NPM.Resolver do
   end
 
   defp resolve_from_source!(name) do
-    Driver.fetch_npm_package_description(name)
+    Adapter.fetch_npm_package_description(name)
   end
 end

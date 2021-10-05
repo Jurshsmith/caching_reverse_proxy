@@ -1,4 +1,4 @@
-defmodule CachingReverseProxy.NPM.Driver do
+defmodule CachingReverseProxy.NPM.Adapter do
   @one_graph_app_url "https://serve.onegraph.com/graphql?app_id=0b33e830-7cde-4b90-ad7e-2a39c57c0e11"
 
   @spec fetch_npm_package_description(binary) :: {:ok, %{description: term}}
